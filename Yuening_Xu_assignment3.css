@@ -4,50 +4,20 @@ th {
   border-collapse: collapse;
   border-style: solid;
   border-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
+ol {
+  color: mediumslateblue;
+}
+ul {
+  color: steelblue;
+}
 .StudentTable {
   text-align: center;
 }
-.cadd {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.cname {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.cage {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.cnum {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.task3 {
-  color: darkgreen;
-}
-
-#name {
-  color: aqua;
-}
-#age {
-  color: blueviolet;
-}
-#phone {
-  color: forestgreen;
-}
-#address {
-  color: hotpink;
-}
-#searchInput {
-  border-style: solid;
-  border-color: lightgrey;
-  border-radius: 30px;
-  width: 60%;
-  height: 40px;
-  font-size: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }

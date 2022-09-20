@@ -1,3 +1,6 @@
+const conatiner = document.createElement("div");
+conatiner.className = "flex";
+document.body.appendChild(conatiner);
 /*
 
 Question 1
@@ -36,7 +39,8 @@ const tableInfo = {
   ],
 };
 const table = document.createElement("table");
-document.body.appendChild(table);
+table.className = "StudentTable";
+conatiner.appendChild(table);
 
 const tr = document.createElement("tr");
 table.appendChild(tr);
@@ -66,7 +70,7 @@ Given the array and generate order list and unordered list dynamically as follow
 
 const list = ["HTML", "JavaScript", "CSS", "React", "Redux", "Java"];
 const orderList = document.createElement("OL");
-document.body.appendChild(orderList);
+conatiner.appendChild(orderList);
 for (let i = 0; i < list.length; i++) {
   const item = document.createElement("li");
   const text = document.createTextNode(list[i]);
@@ -74,10 +78,10 @@ for (let i = 0; i < list.length; i++) {
   orderList.appendChild(item);
 }
 
-const unorderList = document.createElement("OL");
-document.body.appendChild(unorderList);
+const unorderList = document.createElement("UL");
+conatiner.appendChild(unorderList);
 for (let i = 0; i < list.length; i++) {
-  const item = document.createElement("ol");
+  const item = document.createElement("li");
   const text = document.createTextNode(list[i]);
   item.appendChild(text);
   unorderList.appendChild(item);
