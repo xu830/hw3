@@ -104,7 +104,8 @@ const dropDownList = [
   { value: "sanJose", content: "San Jose" },
 ];
 const dropDown = document.createElement("select");
-document.body.appendChild(dropDown);
+dropDown.className = "dropdown";
+conatiner.appendChild(dropDown);
 for (let i = 0; i < dropDownList.length; i++) {
   const ele = document.createElement("option");
   ele.setAttribute("value", dropDownList[i].value);

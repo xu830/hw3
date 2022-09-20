@@ -9,9 +9,15 @@ th {
 }
 ol {
   color: mediumslateblue;
+  margin: auto;
 }
 ul {
   color: steelblue;
+  list-style-type: square;
+  margin: auto;
+}
+.dropdown {
+  margin: auto;
 }
 .StudentTable {
   text-align: center;
